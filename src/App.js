@@ -8,7 +8,8 @@ import "./style.css";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [ value ] = useState(false)
+  
+  const [ darkMode, setDarkMode ] = useDarkMode(false)
 
   useEffect(() => {
     axios
